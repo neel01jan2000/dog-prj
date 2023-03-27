@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark1">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="image/logo.jpg" /></a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <form class="form-inline1 mr-auto mt-2 mt-lg-0">
+        <div class="btn-group">
+          <div class="menuicon">
+            <div class="dropdown12">
+              <button class="btn btn-default" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <b><i class="fas fa-bars"></i></b>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Page 1</a>
+                <a class="dropdown-item" href="#">Page 2</a>
+                <a class="dropdown-item" href="#">Page 3</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <b>All Categories</b>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Categories</a>
+            </div>
+          </div>
+        </div>
+      </form>
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">All Listing <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" data-toggle="modal" data-target="#myModal" href="#">Contact<span
+              class="sr-only">(current)</span></a>
+
+          <!-- Trigger the modal with a button -->
+
+          <!-- Modal -->
+          <div id="myModal" class="modal fade" role="dialog">
+           
+                <div class="modal-dialog">
+                  <div class="row">
+                    <div class="col-sm-4 stcol">
+                      <div class="hed1">
+                        <h3>Contact Info</h3>
+                      </div>
+
+                      <div class="compdetls">
+                        <div class="sec">
+                          <div class="x2">
+                            <i class="fas fa-building"><span class="ic3">Company</span></i>
+                          </div>
+                          <p>Buy and Sell Private Ltd</p>
+                        </div>
+                       
+                        <div class="sec">
+                        <div class="x2">
+                          <i class="fas fa-envelope"><span class="ic3"> Email</span> </i>
+                        </div>
+                        <p> companyinfo@gmail.com</p>
+                      </div>
+
+                      <div class="sec">
+                        <div class="x2">
+                          <i class="fas fa-phone-volume"><span class="ic3">Phone no.</span></i>
+                        </div>
+                        <p> 1800 838 093</p>
+                      </div>
+
+                      <div class="sec">
+                        <div class="x2">
+                          <i class="fas fa-map-marker-alt"><span class="ic3">Address</span> </i>
+                        </div>
+                        <p>New Delhi, India</p>
+                      </div>
+
+                      <div class="ftr">
+                        <div class="x3">
+                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-8 stcol2">
+                       <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Contact Us</h5>
+                      <button type="button" class="close text-white" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+    
+                    <div class="modal-body">
+                      <div class="container">
+    
+                          <div class="col-lg-12 m-auto d-block">
+                            <form>
+                              <div class="form-group">
+                                <label for="user"> Name: </label>
+                                <input type="text" name="username" id="usernames" class="form-control" />
+                                <h6 id="usercheck" style="color: rgb(248, 94, 94)">
+                                  **Name is missing
+                                </h6>
+                              </div>
+      
+                              <div class="form-group">
+                                <label for="user"> Email: </label>
+                                <input type="email" name="email" id="email" required class="form-control" />
+                                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                                  Your email must be a valid email
+                                </small>
+                              </div>
+      
+                              <div class="form-group">
+                                <label for="user">Phone no: </label>
+                                <input type="tel" name="phone" id="phone" required class="form-control" />
+                                <small id="phonecheck" class="form-text text-muted invalid-feedback">
+                                  Your Phone number must be valid
+                                </small>
+                              </div>
+                              <div class="form-group">
+                                <label for="text">Message</label>
+                                <textarea rows="3" cols="50" name="comment" form="usrform">
+                                  </textarea>
+                              </div>
+                              <input type="submit" id="submitbtn" value="Submit" class="btn btn-default1" />
+      
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                      </button>
+                    </div> -->
+                  </div>
+                    </div>
+                  </div>
+                </div>
+            
+          </div>
+        </li>
+
+        <li class="nav-item active ico7">
+          <a class="nav-link" href="#"><i class="fas fa-comment-dots"></i><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active ico7">
+          <a class="nav-link" href="#"><i class="fas fa-heart"></i><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active ico7">
+          <a class="nav-link" href="#"><i class="fas fa-user"></i><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active ico8">
+          <a class="nav-link" href="#"><i class="fas fa-plus-square"></i><span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="banr">
+    <div class="emg">
+    <img src="image/black.jpg" />
+    </div>
+    <div class="d-img">
+      <img src="image/d.png" />
+    </div>
+
+    <div class="word">
+      <p>Buy and sell</p>
+      <p>you want</p>
+    </div>
+
+    <div class="search-address">
+      <div class="row m78">
+        <div class="dropdown1">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-map-marker-alt"></i> New York, USA
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">New Delhi, India</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+
+        <form class="form1 form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <b>Search</b>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-top">
+    <div class="arrow up"></div>
+  </button>
+  <div class="container m68">
+    <div class="heading">
+      <h1>Explore Categories</h1>
+    </div>
+    <div class="row margtp">
+      <div class="item21">
+        <div class="item_img">
+          <a href="#"><img src="image/pic1.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>German Shepherd</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item2">
+        <div class="item_img">
+          <a href="#"><img src="image/pic2.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>Bull Dog</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item2">
+        <div class="item_img">
+          <a href="#"><img src="image/pic1.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>German Shepherd</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item2">
+        <div class="item_img">
+          <a href="#"><img src="image/pic2.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>Bull Dog</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item22">
+        <div class="item_img">
+          <a href="#"><img src="image/pic1.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>German Shepherd</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item23">
+        <div class="item_img">
+          <a href="#"><img src="image/pic1.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>German Shepherd</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item_img">
+          <a href="#"><img src="image/pic2.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>Bull Dog</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item_img">
+          <a href="#"><img src="image/pic1.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>German Shepherd</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item_img">
+          <a href="#"><img src="image/pic2.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>Bull Dog</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+
+      <div class="item24">
+        <div class="item_img">
+          <a href="#"><img src="image/pic1.jpg" /></a>
+        </div>
+        <div class="item_info">
+          <h3>German Shepherd</h3>
+          <span>
+            <h6>12,998 Items</h6>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature jumbotron">
+    <div class="container">
+      <div class="heading">
+        <h1>Featured Listings</h1>
+      </div>
+      <div class="product">
+        <div class="row">
+          <div class="col-sm-6 dglist">
+            <div class="product_item">
+              <div class="proI">
+                <img src="image/pro2.jpg" />
+              </div>
+              <div class="itm_name">
+                <h5>Beagle</h5>
+                <p class="address">New Delhi, 24hr ago</p>
+                <h6>$157,786</h6>
+                <button type="button" class="btn btn-warning">
+                  Renoveted
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Promoted
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 dglist">
+            <div class="product_item">
+              <div class="proI">
+                <img src="image/pro3.jpg" />
+              </div>
+              <div class="itm_name">
+                <h5>Labrador Retriever</h5>
+                <p class="address">New Delhi, 24hr ago</p>
+                <h6>$157,786</h6>
+                <button type="button" class="btn btn-warning">
+                  Renoveted
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Promoted
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 dglist">
+            <div class="product_item">
+              <div class="proI">
+                <img src="image/pro3.jpg" />
+              </div>
+              <div class="itm_name">
+                <h5>Labrador Retriever</h5>
+                <p class="address">New Delhi, 24hr ago</p>
+                <h6>$157,786</h6>
+                <button type="button" class="btn btn-warning">
+                  Renoveted
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Promoted
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 dglist">
+            <div class="product_item">
+              <div class="proI">
+                <img src="image/pro2.jpg" />
+              </div>
+              <div class="itm_name">
+                <h5>Beagle</h5>
+                <p class="address">New Delhi, 24hr ago</p>
+                <h6>$157,786</h6>
+                <button type="button" class="btn btn-warning">
+                  Renoveted
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Promoted
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 dglist">
+            <div class="product_item">
+              <div class="proI">
+                <img src="image/pro2.jpg" />
+              </div>
+              <div class="itm_name">
+                <h5>Beagle</h5>
+                <p class="address">New Delhi, 24hr ago</p>
+                <h6>$157,786</h6>
+                <button type="button" class="btn btn-warning">
+                  Renoveted
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Promoted
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 dglist">
+            <div class="product_item">
+              <div class="proI">
+                <img src="image/pro3.jpg" />
+              </div>
+              <div class="itm_name">
+                <h5>Labrador Retriever</h5>
+                <p class="address">New Delhi, 24hr ago</p>
+                <h6>$157,786</h6>
+                <button type="button" class="btn btn-warning">
+                  Renoveted
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Promoted
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="heading">
+      <h1>Post and Promote Your Listingss</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="info">
+          <h3>Free</h3>
+          <div class="inf-details">
+            <p>
+              <span><i class="fas fa-check"></i> </span> Your ad will be
+              promoted for 3 days.
+            </p>
+            <p>
+              <span> <i class="fas fa-check"></i></span> Get Upto 10x times
+              more responsive.
+            </p>
+            <p>
+              <span><i class="fas fa-check"></i></span> Your ad will be
+              featured for 1 day.
+            </p>
+          </div>
+          <h1 class="price">
+            $0 <span class="text-mesag">/For Lifetime</span>
+          </h1>
+          <button class="button button1">Get Started</button>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="info">
+          <h3>Standard</h3>
+          <div class="inf-details">
+            <p>
+              <span><i class="fas fa-check"></i> </span> Your ad will be
+              promoted for 3 days.
+            </p>
+            <p>
+              <span> <i class="fas fa-check"></i></span> Get Upto 10x times
+              more responsive.
+            </p>
+            <p>
+              <span><i class="fas fa-check"></i></span> Your ad will be
+              featured for 1 day.
+            </p>
+          </div>
+          <h1 class="price">
+            $49 <span class="text-mesag">/For Lifetime</span>
+          </h1>
+          <button class="button button1">Get Started</button>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="info">
+          <h3>Premium</h3>
+          <div class="inf-details">
+            <p>
+              <span><i class="fas fa-check"></i> </span> Your ad will be
+              promoted for 3 days.
+            </p>
+            <p>
+              <span> <i class="fas fa-check"></i></span> Get Upto 10x times
+              more responsive.
+            </p>
+            <p>
+              <span><i class="fas fa-check"></i></span> Your ad will be
+              featured for 1 day.
+            </p>
+          </div>
+          <h1 class="price">
+            $99 <span class="text-mesag">/For Lifetime</span>
+          </h1>
+          <button class="button button1">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="last-section">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="heading-name">
+            <h1 class="hname">Earn cash by selling</h1>
+            <h1 class="hname">or Find anything you desire</h1>
+            <div class="p-gaph">
+              <p>
+                Their are many variation of passages of Lorem Ipsum avilable,
+                but the have suffered
+              </p>
+              <p>
+                alteration in some form, by injected humo or randomised word
+                which even slightlys
+              </p>
+            </div>
+            <div class="ad">
+              <button class="button button11">Post your ad</button>
+              <button class="button button12">Browse ads</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="pic33">
+            <img src="image/img2.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-sec text-center">
+      <p>
+        2022 German Shepherd dog Online| COPYRIGHT Reserved | Managed by
+        iPistis.
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script>
+    const colorMax = 192;
+
+    const scrollBreakpoint = window.innerHeight * 0.9;
+
+    document.addEventListener("DOMContentLoaded", () => {
+      randomizeBackgrounds();
+      setupScrollListener();
+      setupScrollEvent();
+    });
+
+    // scrolls window to top
+    function setupScrollEvent() {
+      const scrollButton = document.querySelector(".scroll-top");
+
+      scrollButton.addEventListener("click", (e) => {
+        // not the best solution until Safari/Edge support scroll behavior
+        // window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Thanks to Geroge Daniel https://stackoverflow.com/questions/51229742/javascript-window-scroll-behavior-smooth-not-working-in-safari
+        smoothVerticalScrolling(scrollButton.parentElement, 250, "top");
+      });
+    }
+
+    // prepares the window for a scroll event to show the scroll button
+    function setupScrollListener() {
+      window.addEventListener("scroll", (e) => {
+        const scrollButton = document.querySelector(".scroll-top");
+
+        // const scrollOffset = document.scrollingElement.scrollTop;
+        const scrollOffset = window.scrollY;
+
+        if (scrollOffset >= scrollBreakpoint) {
+          scrollButton.classList.add("visible");
+        } else if (scrollOffset <= 0) {
+          scrollButton.classList.remove("visible");
+        }
+      });
+    }
+
+    function randomizeBackgrounds() {
+      // get all the content containers
+      const contentContainers =
+        document.querySelectorAll(".content-container");
+
+      [].forEach.call(contentContainers, (container) => {
+        // assign random background
+        container.style.background = `rgb(${randVal(colorMax)},${randVal(
+          colorMax
+        )},${randVal(colorMax)})`;
+      });
+    }
+
+    // random between 0 to max
+    function randVal(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    // uses a timeout to scroll to top
+    function smoothVerticalScrolling(e, time, where) {
+      // gets the element's top position relative to the viewport
+      const eTop = e.getBoundingClientRect().top;
+
+      // divides the top offset into 100 steps to be ellapsed
+      const eAmt = eTop / 100;
+
+      // starting time
+      let curTime = 0;
+
+      // not to exceed the desired duration
+      while (curTime <= time) {
+        // call a function to execute at one hundreth of the desired scroll time
+        window.setTimeout(SVS_B, curTime, eAmt, where);
+        // increase by one hundreth of the desired time to execute exactly 100 times
+        curTime += time / 100;
+      }
+    }
+
+    function SVS_B(eAmt, where) {
+      // scroll by half the hundredth of the top offset if destination is not top (since to center only involves scrolling either in the top or bottom half of the window)
+      if (where == "center" || where == "") {
+        window.scrollBy(0, eAmt / 2);
+      }
+      // otherwise scroll the full amount
+      if (where == "top") {
+        window.scrollBy(0, eAmt);
+      }
+    }
+  </script>
+
+  <script>
+    // Document is ready
+    $(document).ready(function () {
+      // Validate Username
+      $("#usercheck").hide();
+      let usernameError = true;
+      $("#usernames").keyup(function () {
+        validateUsername();
+      });
+
+      function validateUsername() {
+        let usernameValue = $("#usernames").val();
+        if (usernameValue.length == "") {
+          $("#usercheck").show();
+          usernameError = false;
+          return false;
+        } else if (usernameValue.length < 3 || usernameValue.length > 20) {
+          $("#usercheck").show();
+          $("#usercheck").html(
+            "**length of username must be between 3 and 20"
+          );
+          usernameError = false;
+          return false;
+        } else {
+          $("#usercheck").hide();
+        }
+      }
+
+      // Validate Email
+      const email = document.getElementById("email");
+      email.addEventListener("blur", () => {
+        let regex =
+          /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+        let s = email.value;
+        if (regex.test(s)) {
+          email.classList.remove("is-invalid");
+          emailError = true;
+        } else {
+          email.classList.add("is-invalid");
+          emailError = false;
+        }
+      });
+
+      // Submit button
+      $("#submitbtn").click(function () {
+        validateUsername();
+        validatePassword();
+        validateConfirmPassword();
+        validateEmail();
+        if (
+          usernameError == true &&
+          passwordError == true &&
+          confirmPasswordError == true &&
+          emailError == true
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
